@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hamster.com</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <script src="libs/jquery-1.11.3.js"></script>
+    <script src="libs/handlebars-v3.0.3.js"></script>
+    <script src="libs/ember-template-compiler.js"></script>
+    <script src="libs/ember.debug.js"></script>
+    <script src="libs/ember-handlebars-loader-0.0.2.js"></script>
+
+    <script src="app.js"></script>
+    <script src="router.js"></script>
+    <script src="controllers/home.js"></script>
+
+    <script>
+    EmberHandlebarsLoader.loadTemplates(['application',
+                                         'home',
+                                         'article']);
+  </script>
+  </head>
+  <body>
+
+  </body>
+</html>

@@ -1,0 +1,1 @@
+HamsterApp = Ember.Application.create();

@@ -1,0 +1,95 @@
+.navbar {
+  background: white;
+  border: 1px solid #ddd;
+  height: 60px;
+  font-family: "Montserrat",Helvetica,Arial,sans-serif;
+}
+
+.navbar .brand {
+  font-size: 1.5em;
+  color: #333;
+  lin-height: 60px;
+}
+
+.row {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.row > div {
+  height: 300px;
+}
+
+.row > div:nth-child(n + 2) {
+  margin-top: 30px;
+}
+
+.tile {
+  position: relative;
+  height: inherit;
+  overflow: hidden;
+}
+
+.tile img {
+  height: 100%;
+  width: 100%;
+}
+
+.tile h3 {
+  position: absolute;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  background: rgba(0, 0, 0, .5);
+  color: white;
+  line-height: 70px;
+  text-indent: 10px;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel:hover .glyphicon-menu-left {
+  left: 0px;
+}
+
+.carousel:hover .glyphicon-menu-right {
+  right: 0px;
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.carousel .glyphicon {
+  position: absolute;
+  top: 120px;
+  padding: 10px;
+  font-size: 2.5em;
+  background: rgba(0, 0, 0, .4);
+  color: white;
+  transition: background .15s, left .15s, right .15s;;
+}
+
+.carousel .glyphicon:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, .6);
+  transition: background .15s, left .15s, right .15s;
+}
+
+.glyphicon-menu-left {
+  left: -55px;
+}
+
+.glyphicon-menu-right {
+  right: -55px;
+}
+
+@media (min-width: 768px) {
+  .row > div:nth-child(n + 2) {
+    margin-top: 0px;
+  }
+  }
